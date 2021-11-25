@@ -40,6 +40,7 @@ class ChatBubble extends StatelessWidget {
       margin: margin ?? EdgeInsets.all(0),
       child: PhysicalShape(
         clipper: clipper as CustomClipper<Path>,
+        clipBehavior: Clip.antiAlias,
         elevation: elevation ?? 2,
         color: backGroundColor ?? Colors.blue,
         shadowColor: shadowColor ?? Colors.grey.shade200,
